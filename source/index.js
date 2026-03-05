@@ -9,19 +9,20 @@ function updateTime() {
     londonTimeElement.innerHTML = londonTime.format(
       "h:mm:ss [<strong>]A[</strong>]",
     );
+  }
 
-    let melbourneElement = document.querySelector("#Melbourne");
-    if (melbourneElement) {
-      let melbourneDateElement = document.querySelector("#date");
-      let melbourneTimeElement = document.querySelector("#time");
-      let melbourneTime = moment().tz("Australia/Melbourne");
+  let melbourneElement = document.querySelector("#Melbourne");
+  if (melbourneElement) {
+    let melbourneDateElement = document.querySelector("#date");
+    let melbourneTimeElement = document.querySelector("#time");
+    let melbourneTime = moment().tz("Australia/Melbourne");
 
-      melbourneDateElement.innerHTML = melbourneTime.format("MMMM Do YYYY");
-      melbourneTimeElement.innerHTML = melbourneTime.format(
-        "h:mm:ss [<strong>]A[</strong>",
-      );
-    }
+    melbourneDateElement.innerHTML = melbourneTime.format("MMMM Do YYYY");
+    melbourneTimeElement.innerHTML = melbourneTime.format(
+      "h:mm:ss [<strong>]A[</strong>]",
+    );
   }
 }
+
 updateTime();
 setInterval(updateTime, 1000);
