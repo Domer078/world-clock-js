@@ -13,28 +13,30 @@
     <div class="container">
       <h1>World Clock⏱️🌍</h1>
 
-      <select>
+      <select id="city">
         <option value="">Choose a city</option>
-        <option value="">Paris</option>
-        <option value="">Vienna</option>
-        <option value="">Los Angeles</option>
+        <option value="current">My location</option>
+        <option value="Europe/Paris">Paris</option>
+        <option value="Europe/Vienna">Vienna</option>
+        <option value="America/Los_Angeles">Los Angeles</option>
       </select>
-
-      <div class="city" id="London">
-        <div>
-          <h2>London</h2>
-          <div class="date"></div>
-        </div>
-        <div class="time"></div>
-      </div>
-
-      <div class="city" id="Monaco">
-        <div>
-          <h2>Monaco</h2>
-          <div class="date"></div>
+      <div id="cities">
+        <div class="city" id="London">
+          <div>
+            <h2>London</h2>
+            <div class="date"></div>
+          </div>
+          <div class="time"></div>
         </div>
 
-        <div class="time"></div>
+        <div class="city" id="Monaco">
+          <div>
+            <h2>Monaco</h2>
+            <div class="date"></div>
+          </div>
+
+          <div class="time"></div>
+        </div>
       </div>
     </div>
 
