@@ -23,6 +23,11 @@ function updateTime() {
     );
   }
 }
+function updateTimeZone(event) {
+  cityName = event.target.value;
+}
 
 updateTime();
 setInterval(updateTime, 1000);
+let cityNameElement = document.querySelector("#city");
+cityNameElement.addEventListener("change", updateTimeZone);
