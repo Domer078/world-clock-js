@@ -11,14 +11,14 @@ function updateTime() {
     );
   }
 
-  let melbourneElement = document.querySelector("#Melbourne");
-  if (melbourneElement) {
-    let melbourneDateElement = document.querySelector("#date");
-    let melbourneTimeElement = document.querySelector("#time");
-    let melbourneTime = moment().tz("Australia/Melbourne");
+  let torontoElement = document.querySelector("#Toronto");
+  if (torontoElement) {
+    let torontoDateElement = document.querySelector("#date");
+    let torontoTimeElement = document.querySelector("#time");
+    let torontoTime = moment().tz("America/Toronto");
 
-    melbourneDateElement.innerHTML = melbourneTime.format("MMMM Do YYYY");
-    melbourneTimeElement.innerHTML = melbourneTime.format(
+    torontoDateElement.innerHTML = torontoTime.format("MMMM Do YYYY");
+    torontoTimeElement.innerHTML = torontoTime.format(
       "h:mm:ss [<strong>]A[</strong>]",
     );
   }
