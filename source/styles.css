@@ -29,6 +29,13 @@ select {
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   border-radius: 10px;
 }
+.time {
+  font-size: 48px;
+  font-weight: bold;
+}
+.date {
+  opacity: 0.7;
+}
 .city {
   display: flex;
   margin: 10px 0;
