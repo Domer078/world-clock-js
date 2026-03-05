@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="source/styles.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.30.1/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.6.0/moment-timezone-with-data-1970-2030.min.js"></script>
 
     <title>World-Clock-Js</title>
   </head>
@@ -22,18 +23,18 @@
       <div class="city" id="London">
         <div>
           <h2>London</h2>
-          <div class="date">March 5th 2026</div>
+          <div class="date" id="date"></div>
         </div>
-        <div class="time">14:00:01 <strong>PM</strong></div>
+        <div class="time" id="time"><strong>PM</strong></div>
       </div>
 
-      <div class="city">
+      <div class="city" id="Melbourne">
         <div>
           <h2>Melbourne</h2>
-          <div class="date">March 5th 2026</div>
+          <div class="date" id="date"></div>
         </div>
 
-        <div class="time">14:00:01 <strong>PM</strong></div>
+        <div class="time" id="time"><strong>PM</strong></div>
       </div>
     </div>
 
